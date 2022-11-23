@@ -1,0 +1,39 @@
+'''
+real state
+*****
+***
+*
+****
+**
+
+first sort
+*
+* *
+* * *
+* * * *
+* * * * *
+
+mirror sort 
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+
+'''
+
+list1 = ["*", "*", "*", "*", "*"]
+list2 = ["*", "*", "*"]
+list3 = ["*"]
+list4 = ["*", "*", "*", "*"]
+list5 = ["*", "*"]
+
+list_index = [list1, list2, list3, list4, list5 ]
+list_index.sort(key = len)
+[print(*a) for a in list_index];
+
+x = len(list_index)
+i = 0
+while(i < x ):
+    print((x - i) * "  " , *list_index[i])
+    i = i + 1
